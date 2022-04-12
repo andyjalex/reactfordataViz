@@ -102,7 +102,7 @@ export default class Table extends Component {
     return (
     this.state.data.col_headers.map(function (item, i) {
       return(
-        <Col md={2} xs={3}>{item}</Col>
+        <Col md={2} xs={3} style={{marginTop: "2px", color: '#A0A6AF' }}>{item}</Col>
       )
     })
     )
@@ -110,14 +110,14 @@ export default class Table extends Component {
 
   renderRows() {
    var cells = this.state.data.cells
-   const background = "grey"
+   const background = "white"
     return (
       this.state.data.row_headers.map(function (item, i) {
         return(
         <div>
         <Row
           key={i}
-            style={{marginTop: "2px", backgroundColor: '#ccc' }}
+            style={{marginTop: "8px", backgroundColor: '#fff' }}
           >
           <Col md={2} xs={3}>{item}</Col>
           {cells[i].map(function (cell, j)
@@ -147,7 +147,7 @@ export default class Table extends Component {
     return(
       <div class="someclass">
         <Row>
-          <Col md={2} xs={3}>Month</Col>
+          <Col md={2} xs={3} style={{marginTop: "2px", color: '#A0A6AF' }}>Month</Col>
           {this.renderCols()}
         </Row>
         {this.renderRows()}
