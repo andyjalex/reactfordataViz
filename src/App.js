@@ -42,8 +42,16 @@ class App extends Component{
 
   setBreed = (newbreed) => {
     let { breed } = this.state
-    breed.push(newbreed);
-    this.setState({ breed: breed })
+
+    var array = [...this.state.breed];
+    var index = array.indexOf(newbreed)
+    if (index !== -1) { //already selected
+      array.splice(index, 1);
+      this.setState({breed: array});
+    } else {
+      breed.push(newbreed);
+      this.setState({ breed: breed })
+    }
   }
 
   componentDidMount() {
@@ -100,7 +108,7 @@ class App extends Component{
             <Row>
               <Col md={12} xs={12}>
                 {this.renderChart()}
-        
+
                 </Col>
             </Row>
             <Row>
