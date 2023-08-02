@@ -34,6 +34,7 @@ const Dropdown = ({ label, options, selected, onSelectedChange }) => {
 
   const renderedOptions = options.map((option) => {
     var optionFound = 0
+    console.log(selected)
     const classes = `item item-selected`
     selected.map((sOption) => {
       if(option.value === sOption.value)
