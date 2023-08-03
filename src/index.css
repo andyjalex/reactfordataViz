@@ -384,6 +384,8 @@ ul {
   background: transparent;
   display: grid;
   row-gap: 2rem;
+
+}
   @media (min-width: 768px) {
     grid-template-columns:minmax(0, 1fr);
     grid-column-gap: 2vw;
@@ -395,7 +397,7 @@ ul {
   };
 
 
-}
+
 .product-container {
   background: transparent;
   display: grid;
@@ -415,7 +417,7 @@ ul {
   display: grid;
   background: var(--white);
   border-radius: var(--borderRadius);
-  margin: 3rem auto;
+  margin: 2rem auto;
   grid-template-columns:minmax(0, 1fr);
 
 
@@ -425,6 +427,8 @@ ul {
     position: relative;
     max-width: 100% !important;
     box-shadow: var(--white) !important;
+    padding: 0  !important;
+    margin: 2rem auto !important;
 }
 
 .chart-container {
