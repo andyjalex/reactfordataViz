@@ -419,6 +419,8 @@ ul {
   border-radius: var(--borderRadius);
   margin: 2rem auto;
   grid-template-columns:minmax(0, 1fr);
+  padding-left: 1rem;
+  padding-right: 1rem;
 
 
 }
