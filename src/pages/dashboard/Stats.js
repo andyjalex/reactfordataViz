@@ -89,10 +89,13 @@ const Stats = () => {
     });
   }
 
+  //
+  //
+
+
   return (
     <>
-      <Row>
-        <Col md={6} xs={12}>
+      <div className='selections-container'>
         <Dropdown
           multiple
           label="Select a Breed"
@@ -100,17 +103,20 @@ const Stats = () => {
           onSelectedChange={handleBreed}
           options={options}
         />
-        </Col>
-      </Row>
-      <Row>
-        <Col md={12} xs={12}>
-          {renderChart()}
 
-          </Col>
-      </Row>
-      <Row>
-        <Col md={12} xs={12}>{renderTable()}</Col>
-      </Row>
+      </div>
+
+      <div className='charts-container'>
+        {renderChart()}
+
+
+
+        <div className='chart-container'>
+        {renderTable()}
+
+        </div>
+      </div>
+
 
     </>
   );

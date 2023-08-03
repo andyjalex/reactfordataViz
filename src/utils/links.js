@@ -1,7 +1,6 @@
-import { IoBarChartSharp } from 'react-icons/io5';
-import { MdQueryStats } from 'react-icons/md';
-import { FaWpforms } from 'react-icons/fa';
-import { ImProfile } from 'react-icons/im';
+import { AiFillCar } from 'react-icons/ai';
+import { FaWpforms, FaDog } from 'react-icons/fa';
+import { BiMusic, BiFootball } from 'react-icons/bi';
 
 
 const links = [
@@ -9,25 +8,25 @@ const links = [
     id: 1,
     text: 'Dogs',
     path: '/',
-    icon: <IoBarChartSharp />,
+    icon: <FaDog />,
   },
   {
     id: 2,
     text: 'Cars',
-    path: 'all-jobs',
-    icon: <MdQueryStats />,
+    path: 'cars',
+    icon: <AiFillCar />,
   },
   {
     id: 3,
-    text: 'add job',
-    path: 'add-job',
-    icon: <FaWpforms />,
+    text: 'football',
+    path: 'football',
+    icon: <BiFootball />,
   },
   {
     id: 4,
-    text: 'profile',
-    path: 'profile',
-    icon: <ImProfile />,
+    text: 'music',
+    path: 'music',
+    icon: <BiMusic />,
   },
 ];
 

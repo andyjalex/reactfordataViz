@@ -23,7 +23,8 @@ export default class ChartWrapper extends Component {
 
   render() {
     //console.log(this.ref.chart)
-    return <div className ="svg-container" ref="chart" id="container" ></div>
+    //return <div className ="svg-container" ref="chart" id="container" ></div>
+    return <div className ="chart-container" ref="chart" id="container" ></div>
   }
 
 }

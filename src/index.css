@@ -62,17 +62,19 @@ code {
   display: block;
 }
 
-.svg-container {
+/* .svg-container {
     display: inline-block;
     position: relative;
     width: 100%;
     padding-bottom: 50%;
     vertical-align: top;
     overflow: hidden;
-}
+} */
+
+
 .svg-content {
     display: inline-block;
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: 0;
 }
@@ -371,21 +373,22 @@ ul {
   margin-top: -1rem;
 }
 
-.container {
+/* .container {
   width: var(--fluid-width);
   max-width: var(--max-width);
   margin: 0 auto;
 
-}
+} */
 
 .charts-container {
   background: transparent;
   display: grid;
   row-gap: 2rem;
   @media (min-width: 768px) {
-    grid-template-columns:calc(100%);
+    grid-template-columns:minmax(0, 1fr);
     grid-column-gap: 2vw;
   }
+
   @media (min-width: 1120px) {
     grid-template-columns: minmax(0, 1fr);
     grid-column-gap: 2vw;
@@ -397,6 +400,7 @@ ul {
   background: transparent;
   display: grid;
   row-gap: 2rem;
+
   @media (min-width: 768px) {
     grid-template-columns:calc(100%);
     grid-column-gap: 2vw;
@@ -405,14 +409,29 @@ ul {
     grid-template-columns: minmax(0, 1fr) 1fr  ;
     grid-column-gap: 2vw;
   };
+}
+
+.selections-container {
+  display: grid;
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  margin: 3rem auto;
+  grid-template-columns:minmax(0, 1fr);
 
 
+}
+
+.ui.form {
+    position: relative;
+    max-width: 100% !important;
+    box-shadow: var(--white) !important;
 }
 
 .chart-container {
   background: var(--white);
   padding: 2rem;
-  border-radius: var(--borderRadius);
+
+  height: 396px
 
 }
 
@@ -445,4 +464,10 @@ ul {
 
 .Toastify__toast {
   text-transform: capitalize;
+}
+
+#linechart-container {
+  position: relative;
+  height: 300px;
+  max-width: 100%;
 }
