@@ -26,7 +26,7 @@ const Navbar = () => {
         </button>
         <div>
           {/*<Logo />*/}
-          <h3 className="logo-text">Dashboard</h3>
+          <h3 className="logo-text">ReactForDataViz.net </h3>
         </div>
         <div className="btn-container">
           <button

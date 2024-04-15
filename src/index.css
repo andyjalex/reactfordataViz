@@ -384,6 +384,8 @@ ul {
   background: transparent;
   display: grid;
   row-gap: 2rem;
+  border-radius: var(--borderRadius);
+  background: var(--white);
 
 }
   @media (min-width: 768px) {
@@ -414,31 +416,67 @@ ul {
 }
 
 .selections-container {
-  display: grid;
+
   background: var(--white);
   border-radius: var(--borderRadius);
-  margin: 2rem auto;
-  grid-template-columns:minmax(0, 1fr);
+  margin: 1rem auto;
+  display: flex;
+  flex: 1;
   padding-left: 1rem;
   padding-right: 1rem;
+  width: 20rem;
 
 
 }
+.stats-info {
+
+  margin: 1rem auto;
+  display: flex;
+  flex: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.stats-header-container {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex-direction: row;
+}
+
+{/*grid-template-columns:minmax(0, 1fr);*/}
 
 .ui.form {
     position: relative;
     max-width: 100% !important;
     box-shadow: var(--white) !important;
     padding: 0  !important;
-    margin: 2rem auto !important;
+    margin: 1rem auto !important;
 }
 
-.chart-container {
+/* .chart-container {
   background: var(--white);
   padding: 2rem;
-
+  border-radius: var(--borderRadius);
   height: 396px
 
+} */
+.svg-container {
+  background: var(--white);
+  display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+    border-radius: var(--borderRadius);
+
+}
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .full-page {

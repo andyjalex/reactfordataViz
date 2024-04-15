@@ -19,6 +19,7 @@ class D3Chart {
 		var yColumn = "Score"
 
 		const el = document.getElementById("container")
+		console.log(el.clientHeight)
 		vis.height = el.clientHeight - vis.margin.top - vis.margin.bottom
 		vis.width = el.clientWidth - vis.margin.left - vis.margin.right
 
@@ -27,9 +28,10 @@ class D3Chart {
 			.append("svg")
 			// .attr('height', el.clientHeight)
 		 	// .attr('width', el.clientWidth)
-			//.attr("preserveAspectRatio", "xMinYMin meet")
+			.attr("preserveAspectRatio", "xMinYMin meet")
 			.attr("viewBox", "0 0 " + (vis.width + vis.margin.left + vis.margin.right) + " " + (vis.height + vis.margin.top + vis.margin.bottom))
-	//		.classed("svg-content", true)
+			//.attr("viewBox", "0 0 300 300")
+			.classed("svg-content", true)
 			.append("g")
 				.attr("transform", `translate(${vis.margin.left}, ${vis.margin.top})`)
 
@@ -57,6 +59,7 @@ class D3Chart {
 	}
 
 	update(data, breed) {
+
 		let vis = this
 
 		vis.g

@@ -95,6 +95,10 @@ const Stats = () => {
 
   return (
     <>
+    <div className="stats-header-container">
+      <div className="stats-info">
+
+      </div>
       <div className='selections-container'>
         <Dropdown
           multiple
@@ -105,17 +109,19 @@ const Stats = () => {
         />
 
       </div>
+    </div>
+
 
       <div className='charts-container'>
         {renderChart()}
+      </div>
 
 
-
-        <div className='chart-container'>
+        <div className='charts-container'>
         {renderTable()}
 
         </div>
-      </div>
+
 
 
     </>
